@@ -76,7 +76,7 @@ namespace Project3
                          services.AddDbContext<TestContext>(option =>
                          {
                              option.UseSqlServer(context.Configuration.GetConnectionString("TestContextConnection"));
-                         }, ServiceLifetime.Singleton, ServiceLifetime.Singleton);
+                         });
 
 
                      })
